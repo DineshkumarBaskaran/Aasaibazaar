@@ -1,4 +1,7 @@
 import React from 'react';
+import arjun from '../assets/images/arjun.jpeg';
+import meena from '../assets/images/meena.jpeg';
+import vijay from '../assets/images/vijay.jpeg';
 
 const testimonials = [
   {
@@ -6,21 +9,21 @@ const testimonials = [
     name: 'Meena.R',
     city: 'Coimbatore',
     content: 'I’ve never tasted jaggery this fresh. Aasaibazaar is a game-changer!',
-    image: '/images/meena.jpeg'
+    image: meena
   },
   {
     id: 2,
     name: 'Arjun.M',
     city: 'Bangalore',
     content: 'I switched to organic for my kids, and this is the best platform I’ve found. Reliable and affordable.',
-    image: '/images/arjun.jpeg'
+    image: arjun
   },
   {
     id: 3,
     name: 'Vijay.K',
     city: 'Chennai',
     content: 'I’ve been using Aasaibazaar for years. Their products are consistently good and the service is top-notch.',
-    image: '/images/vijay.jpeg'
+    image: vijay
   }
 ];
 

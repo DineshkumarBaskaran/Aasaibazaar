@@ -1,4 +1,5 @@
 import React from 'react';
+import aboutImage from '../assets/images/about.png';
 
 const About = () => {
   return (
@@ -7,7 +8,7 @@ const About = () => {
         <div className="row align-items-center">
           <div className="col-lg-6 mb-4 mb-lg-0">
             <img
-              src="/images/about.png"
+              src={aboutImage}
               alt="Organic Palm Farm"
               className="img-fluid rounded shadow"
             />

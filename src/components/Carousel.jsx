@@ -1,19 +1,22 @@
-import { useState, useEffect } from 'react';
+import React from 'react';
+import banner1 from '../assets/images/banner1.avif';
+import banner2 from '../assets/images/banner2.avif';
+import banner3 from '../assets/images/banner3.avif';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const slides = [
   {
-    image: '/images/banner1.avif',
+    image: banner1
 
   },
   {
-    image: '/images/banner2.avif',
+    image: banner2
   
   },
   {
-    image: '/images/banner3.avif',
+    image: banner3
   }
 ];
 

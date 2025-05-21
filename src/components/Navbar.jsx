@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import logo from '../assets/images/logo.png';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,7 +17,7 @@ const Navbar = () => {
       <div className="container">
         <a href="#" className="navbar-brand d-flex align-items-center" onClick={(e) => { e.preventDefault(); scrollToSection('home'); }}>
           <img
-            src="images/logo.png"
+            src={logo}
             alt="Aasaibazaar"
             className="me-2"
             style={{ height: '32px' }}

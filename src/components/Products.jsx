@@ -1,4 +1,7 @@
 import React from 'react';
+import cubesImage from '../assets/images/cubes.jpg';
+import blocksImage from '../assets/images/blocks.jpg';
+import jaggeryImage from '../assets/images/jaggery.jpg';
 
 const products = [
   {
@@ -8,7 +11,7 @@ const products = [
     oldPrice: '₹499',
     newPrice: '₹399',
     discount: '20% OFF',
-    image: '/images/cubes.jpg',
+    image: blocksImage,
     whatsapp: '919487224491',
     productName: 'Palm Jaggery Block'
   },
@@ -19,7 +22,7 @@ const products = [
     oldPrice: '₹560',
     newPrice: '₹448',
     discount: '20% OFF',
-    image: '/images/blocks.jpg',
+    image: cubesImage,
     whatsapp: '919487224491',
     productName: 'Palm Jaggery Cubes'
   },
@@ -30,7 +33,7 @@ const products = [
     oldPrice: '₹560',
     newPrice: '₹448',
     discount: '20% OFF',
-    image: '/images/jaggery.jpg',
+    image: jaggeryImage,
     whatsapp: '919487224491',
     productName: 'Jaggery Sweets'
   }
