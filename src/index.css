@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+:root {
+  --bs-primary: #2e7d32;
+  --bs-secondary: #4caf50;
+  --bs-success: #81c784;
+  --bs-info: #a5d6a7;
+  --bs-warning: #c8e6c9;
+  --bs-danger: #e8f5e9;
+  --bs-light: #f1f8e9;
+  --bs-dark: #1b5e20;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.text-green {
+  color: var(--bs-primary) !important;
+}
+
+.bg-light-green {
+  background-color: var(--bs-light) !important;
+}
+
+.btn-primary {
+  background-color: var(--bs-primary);
+  border-color: var(--bs-primary);
+}
+
+.btn-primary:hover {
+  background-color: var(--bs-dark);
+  border-color: var(--bs-dark);
+}
+
+.navbar {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-link {
+  color: var(--bs-dark) !important;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: var(--bs-primary) !important;
+}
+
+.card {
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.animate-marquee {
+  animation: marquee 20s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bs-light);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--bs-primary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--bs-dark);
+}
+
+/* Responsive Media Queries */
+
+/* Mobile Devices (up to 576px) */
+@media screen and (max-width: 576px) {
+  .display-4 {
+    font-size: 2rem;
+  }
+  
+  .h4 {
+    font-size: 1.25rem;
+  }
+  
+  .navbar-brand span {
+    font-size: 1.2rem;
+  }
+  
+  .card {
+    margin-bottom: 1rem;
+  }
+  
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  .row {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+  
+  .col-md-3 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  .about-img-responsive {
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* Tablets (577px to 768px) */
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .display-4 {
+    font-size: 2.5rem;
+  }
+  
+  .container {
+    max-width: 720px;
+  }
+  
+  .col-md-3 {
+    width: 50%;
+  }
+}
+
+/* Small Desktops (769px to 992px) */
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+  
+  .display-4 {
+    font-size: 3rem;
+  }
+}
+
+/* Large Desktops and Mac (993px and above) */
+@media screen and (min-width: 993px) {
+  .container {
+    max-width: 1140px;
+  }
+  
+  .display-4 {
+    font-size: 3.5rem;
+  }
+}
+
+/* High-DPI (Retina) Displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  img {
+    image-rendering: -webkit-optimize-contrast;
+  }
+}
+
+/* Landscape Mode for Mobile */
+@media screen and (max-width: 576px) and (orientation: landscape) {
+  .navbar {
+    padding: 0.5rem 1rem;
+  }
+  
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .navbar,
+  .btn,
+  .no-print {
+    display: none !important;
+  }
+  
+  body {
+    font-size: 12pt;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: none;
+  }
+}
